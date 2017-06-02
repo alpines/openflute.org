@@ -36,7 +36,7 @@
             <a class="nav-link" href="guideachat.html">Guide d'achat</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Apprendre à jouer</a>
+            <a class="nav-link" href="apprendreflute.html">Apprendre à jouer</a>
           </li>
             <li class="nav-item dropdown">
              <a class="nav-link dropdown-toggle" href="exemple.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Doigtés</a>
@@ -64,50 +64,66 @@
       </div>
     </nav>
 
-    <div class="container">
-<br>
-<br>
-<div id="octave1" class="btn-group" data-toggle="buttons">
-    <label class="btn btn-primary">
-    <input type="radio" name="options" id="option1" autocomplete="off"> Clear
-    </label>
-    <label class="btn btn-primary">
-    <input type="radio" name="options" id="option2" autocomplete="off"> Do
-    </label>
-    <label class="btn btn-primary">
-    <input type="radio" name="options" id="option3" autocomplete="off"> Do#/Ré♭
-    </label>
-    <label class="btn btn-primary">
-    <input type="radio" name="options" id="option4" autocomplete="off"> Ré#/Mi♭
-    </label>  
-    <label class="btn btn-primary">
-    <input type="radio" name="options" id="option5" autocomplete="off"> Mi
-    </label>
-    <div></div>
-    <label class="btn btn-primary">
-    <input type="radio" name="options" id="option6" autocomplete="off"> Fa
-    </label>
-    <label class="btn btn-primary">
-    <input type="radio" name="options" id="option7" autocomplete="off"> Fa#/Sol♭
-    </label>
-    <label class="btn btn-primary">
-    <input type="radio" name="options" id="option8" autocomplete="off"> Sol
-    </label>
-    <label class="btn btn-primary">
-    <input type="radio" name="options" id="option9" autocomplete="off"> Sol#/La♭
-    </label>
-    <label class="btn btn-primary">
-    <input type="radio" name="options" id="option10" autocomplete="off"> La
-    </label>
-    <label class="btn btn-primary">
-    <input type="radio" name="options" id="option11" autocomplete="off"> La#/Si♭
-    </label>
-    <label class="btn btn-primary">
-    <input type="radio" name="options" id="option12" autocomplete="off"> Si
-    </label>
-
-
+    <div class="container"> 
+        <br>
+        <br>
+        <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#octave1" aria-expanded="false" aria-controls="octave1">
+        Octave 1
+        </button>
+         <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#octave2" aria-expanded="false" aria-controls="octave2">
+        Octave 2
+        </button>
+        <button class="btn btn-danger" type="button" data-toggle="collapse" data-target="#octave3" aria-expanded="false" aria-controls="octave3">
+        Octave 3
+        </button>
+        <br>
+        <br>
+<div id="octave1" class="collapse" data-toggle="buttons">
+    <b>Octave 1 &nbsp; </b>
+	<label class="btn btn-outline-success"><input type="radio" name="options" onchange="pressNote()">Clear</label>
+	<label class="btn btn-outline-success"><input type="radio" name="options" onchange="pressNote('do', 1)">Do</label>
+	<label class="btn btn-outline-success"><input type="radio" name="options" onchange="pressNote('do#', 1)">Do#/Ré♭</label>
+	<label class="btn btn-outline-success"><input type="radio" name="options" onchange="pressNote('re#', 1)">Ré#/Mi♭</label>  
+	<label class="btn btn-outline-success"><input type="radio" name="options" onchange="pressNote('mi', 1)">Mi</label>
+	<label class="btn btn-outline-success"><input type="radio" name="options" onchange="pressNote('fa', 1)">Fa</label>
+	<label class="btn btn-outline-success"><input type="radio" name="options" onchange="pressNote('fa#', 1)">Fa#/Sol♭</label>
+	<label class="btn btn-outline-success"><input type="radio" name="options" onchange="pressNote('sol', 1)">Sol</label>
+	<label class="btn btn-outline-success"><input type="radio" name="options" onchange="pressNote('sol#', 1)">Sol#/La♭</label>
+	<label class="btn btn-outline-success"><input type="radio" name="options" onchange="pressNote('la', 1)">La</label>
+	<label class="btn btn-outline-success"><input type="radio" name="options" onchange="pressNote('la#', 1)">La#/Si♭</label>
+	<label class="btn btn-outline-success"><input type="radio" name="options" onchange="pressNote('si', 1)">Si</label>
     </div>
+<div id="octave2" class="collapse" data-toggle="buttons">
+    <b>Octave 2 &nbsp; </b>
+	<label class="btn btn-outline-warning"><input type="radio" name="options" onchange="pressNote()">Clear</label>
+	<label class="btn btn-outline-warning"><input type="radio" name="options" onchange="pressNote('do', 2)">Do</label>
+	<label class="btn btn-outline-warning"><input type="radio" name="options" onchange="pressNote('do#', 2)">Do#/Ré♭</label>
+	<label class="btn btn-outline-warning"><input type="radio" name="options" onchange="pressNote('re#', 2)">Ré#/Mi♭</label>  
+	<label class="btn btn-outline-warning"><input type="radio" name="options" onchange="pressNote('mi', 2)">Mi</label>
+	<label class="btn btn-outline-warning"><input type="radio" name="options" onchange="pressNote('fa', 2)">Fa</label>
+	<label class="btn btn-outline-warning"><input type="radio" name="options" onchange="pressNote('fa#', 2)">Fa#/Sol♭</label>
+	<label class="btn btn-outline-warning"><input type="radio" name="options" onchange="pressNote('sol', 2)">Sol</label>
+	<label class="btn btn-outline-warning"><input type="radio" name="options" onchange="pressNote('sol#', 2)">Sol#/La♭</label>
+	<label class="btn btn-outline-warning"><input type="radio" name="options" onchange="pressNote('la', 2)">La</label>
+	<label class="btn btn-outline-warning"><input type="radio" name="options" onchange="pressNote('la#', 2)">La#/Si♭</label>
+	<label class="btn btn-outline-warning"><input type="radio" name="options" onchange="pressNote('si', 2)">Si</label>
+</div>
+
+<div id="octave3" class="collapse" data-toggle="buttons">
+    <b>Octave 3 &nbsp; </b>
+	<label class="btn btn-outline-danger"><input type="radio" name="options" onchange="pressNote()">Clear</label>
+	<label class="btn btn-outline-danger"><input type="radio" name="options" onchange="pressNote('do', 2)">Do</label>
+	<label class="btn btn-outline-danger"><input type="radio" name="options" onchange="pressNote('do#', 2)">Do#/Ré♭</label>
+	<label class="btn btn-outline-danger"><input type="radio" name="options" onchange="pressNote('re#', 2)">Ré#/Mi♭</label>  
+	<label class="btn btn-outline-danger"><input type="radio" name="options" onchange="pressNote('mi', 2)">Mi</label>
+	<label class="btn btn-outline-danger"><input type="radio" name="options" onchange="pressNote('fa', 2)">Fa</label>
+	<label class="btn btn-outline-danger"><input type="radio" name="options" onchange="pressNote('fa#', 2)">Fa#/Sol♭</label>
+	<label class="btn btn-outline-danger"><input type="radio" name="options" onchange="pressNote('sol', 2)">Sol</label>
+	<label class="btn btn-outline-danger"><input type="radio" name="options" onchange="pressNote('sol#', 2)">Sol#/La♭</label>
+	<label class="btn btn-outline-danger"><input type="radio" name="options" onchange="pressNote('la', 2)">La</label>
+	<label class="btn btn-outline-danger"><input type="radio" name="options" onchange="pressNote('la#', 2)">La#/Si♭</label>
+	<label class="btn btn-outline-danger"><input type="radio" name="options" onchange="pressNote('si', 2)">Si</label>
+</div>
         
     <div>
     <svg id="flute-svg" viewBox="38.678568 152.70487 244.340 18.192">
